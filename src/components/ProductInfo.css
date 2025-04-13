@@ -1,0 +1,157 @@
+.info {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+  }
+  
+  .info__brand {
+    color:	#44403b;
+    font-weight: 700;
+    margin-bottom: 0rem;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+  }
+  
+  .info__title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: 	#1d2025;
+  }
+  
+  .info__description {
+    color: 	#68707d;
+    line-height: 1.6;
+    margin-top: 0;
+  
+  }
+  
+  .info__price {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .info__price > div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .info__price-current {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  
+  .info__discount {
+    background:	#1d2025;
+    color: white;
+    font-weight: 700;
+    padding: 0.25rem 0.5rem;
+    border-radius: 5px;
+  }
+  
+  .info__price-old {
+    color: 	#b6bcc8;
+    text-decoration: line-through;
+    font-weight: 500;
+  }
+  
+  .info__actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .info__quantity {
+    display: flex;
+    align-items: center;
+    background: 	#f7f8fd;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    gap: 1.5rem;
+    flex: 1;
+    justify-content: space-between;
+    max-width: 160px;
+  }
+  
+  .info__quantity button {
+    background: none;
+    border: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: 	#ff7d1a;
+  }
+  
+  .info__add {
+    background: #ff7d1a;
+    color: white;
+    border: none;
+    flex: 2;
+    padding: 1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    cursor: pointer;
+    box-shadow: 0 10px 20px hsl(26, 100%, 55%, 0.3);
+  }
+  
+
+  @media (max-width: 768px) {
+  .info {
+    padding: 1.5rem;
+    max-width: 100%;
+  }
+
+  .info__brand {
+    margin-top: 0;
+    margin-bottom: 0.50rem;      
+  }
+
+  .info__title {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin-top: 0;
+  }
+
+  .info__description {
+    font-size: 0.95rem;
+  }
+
+  .info__price {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .info__price > div {
+    gap: 0.5rem;
+  }
+
+  .info__price-current {
+    font-size: 1.4rem;
+  }
+
+  .info__price-old {
+    font-size: 0.9rem;
+  }
+
+  .info__actions {
+    flex-direction: column;
+  }
+
+  .info__quantity {
+    width: 100%;
+    max-width: none;
+  }
+
+  .info__add {
+    width: 100%;
+  }
+}
